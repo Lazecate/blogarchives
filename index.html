@@ -63,7 +63,7 @@
     
       <div class="icon"></div>
       <a href="/2014/05/23/个人hexo博客使用手册/">
-  <time datetime="2014-05-22T22:07:47.000Z">
+  <time datetime="2014-05-22T22:20:35.000Z">
     5月 23 2014
   </time>
 </a>
@@ -78,79 +78,15 @@
   <div class="entry">
     
       <h2 id="个人HEXO博客使用手册">个人HEXO博客使用手册</h2>
-<ol>
-<li><p><strong>写博客的流程：</strong></p>
-<blockquote>
-<ul>
-<li><code>cd hexo</code></li>
-<li><code>hexo new &quot;postName&quot;</code></li>
-<li>编辑 source_post\目录下的postName.md （文件头格式）</li>
-<li><code>hexo generate</code> #将内容更新到hexo\public目录下</li>
-<li><code>hexo server</code> 搭建本地服务器</li>
-<li>在localhost:4000 查看效果，进行反复调试。<code>ctrl+c</code>退出。</li>
-<li><code>hexo deploy</code> 发布到github上，完成更新。</li>
-</ul>
-</blockquote>
-</li>
-<li><p><strong>高阶设定：</strong></p>
-<blockquote>
-<ul>
-<li>把<code>&lt;!--more--&gt;</code>放在想作为摘要的一段文字的下方。则这段文字自动成为文章摘要。下方会显示“阅读全文”</li>
-<li><code>hexo new page &quot;about&quot;</code>自定义About页面。然后可以在_config.yml中配置about</li>
-<li>也可以直接创建source\about\index.html，然后配置</li>
-<li>图片显示：在 Source 目录下建立 img 的文件夹，将图片中要使用的图片放入这个文件夹，之后在 markdown 中的语法是： <code>![hello](image/hello.jpg)</code></li>
-<li>创建草稿在 source/_drafts/new-draft.md, 语句是：<code>hexo new draft &quot;New Draft&quot;</code></li>
-<li>在博客中插入 Vimeo，youtube视频，语句是：<code>&lt;hexoescape&gt;0&lt;/hexoescape&gt;</code></li>
-</ul>
-</blockquote>
-</li>
-</ol>
-<ol>
-<li><p><strong>修改Theme</strong></p>
-<blockquote>
-<ul>
-<li>主题安装：<code>git clone &lt;source url&gt;</code></li>
-<li>主题配置：hexo_config.yml中<ul>
-<li><em>theme</em>:主题名， 主题名要与上一步拷贝的文件夹名一致</li>
-<li><em>menu</em>：配置页头显示那些菜单，冒号后面对应的是各个文件夹<ul>
-<li>归档：/archives</li>
-<li>阅读：/reading</li>
-<li>关于：/about</li>
-</ul>
-</li>
-<li><em>widgets</em>: 配置页面一侧显示哪些栏目<ul>
-<li>category</li>
-<li>tag</li>
-<li>tagcloud</li>
-<li>recent posts</li>
-<li>blogroll</li>
-</ul>
-</li>
-<li><em>blogroll</em>: 友情链接<ul>
-<li><code>- bruce sha&#39;s duapp wordpress: http://ibruce.duapp.com</code> </li>
-</ul>
-</li>
-</ul>
-</li>
-<li>主题更新：<code>cd themes/主题名</code> ， 然后输入<code>git pull</code>。</li>
-</ul>
-</blockquote>
-</li>
-<li><p><strong>其他配置</strong></p>
-<blockquote>
-<ul>
-<li>hexo更新： <code>npm update -g hexo</code> 在hexo目录下。</li>
-<li>Tips: 无论是插件还是主题在安装后都需要在根目录下_config.yml中修改plugins和theme的值以启用他们。</li>
-<li>未完待续…</li>
-</ul>
-</blockquote>
-</li>
-</ol>
-
+<p>Hexo 建站需要手动操作的地方很多，并且有时候需要从头再来，所以很有必要记录下一个程式化的流程。<br>这样可以节省再配置的时间，也可以避免对同一问题反复搜索。<br>以后也会根据“技能 get”情况，陆续更新本帖。<br>
     
   </div>
   <footer class="end-sep">
     
+      
+        <div class="alignleft">
+          <a href="/2014/05/23/个人hexo博客使用手册/#more" class="more-link">阅读全文</a>
+        </div>
       
       
     
@@ -182,120 +118,15 @@
       <p><img src="/Users/lazecate/Hexo/source/img/chasingthesun.jpg" alt="hello"></p>
 <p>SaraBareilles的歌一上来就直觉地喜欢上了，直到有一天仔细看了下歌词，突然想明白为什么喜欢上她的歌。</p>
 <p>你会发现，她的歌词都带有一种<strong>诗性美</strong>。这里，歌曲方面，我们暂且不论其音乐在节奏旋律上产生的感染力，尽管它是一个很重要的部分。这里，我只是想就它的歌词与诗歌的某些共性上来探讨一下。</p>
-<p>简单说来，我认为歌词和诗歌的一个最大的共性就是，它们<strong>每个句式表达的意思都是片段而离散的</strong>。句与句之间不必遵循线性的叙述关系。类似于电影的蒙太奇剪辑，诗歌从一个句子描述的意境跳跃到另一个，前一句带来的感染力未及消退，新的意象又扑面而来。好的诗歌或者歌词，充分运用每一个语句来植入一种意象，欣赏的大脑比他们自身的意识更早地接受并加工了这种意象。诗歌语句<strong>对时序逻辑的破坏</strong>，恰恰阻止左脑进行语义的解读，而使右脑接掌分析处理的工作。右脑将会很好地把握语句要传达的情绪与气氛，于是一种一拍即合的欣赏活动就诞生了。最后，欣赏者的意识接收到的是自己大脑进行初步加工后，合成的类似“电影成片”的感受。</p>
-<p>尽管我们接触到的诗歌大多是没有配乐的，但我想最早的诗歌应该跟现在的流行歌曲一样是唱出来的（不论有没有伴奏）。这个唱的行为主要是为了帮助欣赏者掌握欣赏的节奏，好的诗歌语句的意境，必定经过精心设计，如同脚本一样。每条语句就像依次投入湖水中的石子，它们有节奏地入水，激起的涟漪形成组合效果。因此，节奏至关重要，在上一个涟漪扩展到刚好的规模，下一个石子恰好入水，两道涟漪形成干涉，达到最佳的震撼效果。</p>
-<p>本来想翻译下歌词，但我转念一想，翻译就是我欣赏这首歌的结果，它必然带着极強的主观色彩。与其逐句翻译，我不如就描述下当我听它时，脑海中形成什么印象，也就相当于翻译了，只不过是一种意译。     </p>
-<p>歌词初始用寥寥几句描绘出了叙事的氛围、场景——曼哈顿皇后区中心的墓地。这里绝对的静寂，但徜徉其间，浏览300万死者的墓碑与生卒年，你仿佛与这些曾经活过的死者们对话。意识到这里的死者都曾经鲜活过，你才会感觉到自己的心跳是多么的美妙，体验到仿佛300万心脏一起所产生的交响乐般和谐的律动。</p>
-<p>脚下的地面是死者的穹顶，生与死的距离又岂是这薄薄的地表土，歌者尽力用语言和音乐表达亲临于此所产生的震撼，想要通过歌唱传达出这距离的真正含义。终有一天，我们都会化为一抔黄土，如果以时间长度来衡量状态，那么死后的长久静寂也许才是人类真正的状态，约算下来，相当于我们已死，</p>
-<blockquote>
-<p>“All we can do is try  And live like we’re still alive”。</p>
-</blockquote>
-<p>如果不曾努力尝试，活出勃勃生机，整个曼哈顿又何尝不是一座坟墓。这种短暂的alive状态不应被荒废，</p>
-<blockquote>
-<p>“is not meant to be wasted”, </p>
-</blockquote>
-<p>人人都应当永远追逐阳光</p>
-<blockquote>
-<p>“always chasing the sun”，</p>
-</blockquote>
-<p>而非陷入不动的静寂。    </p>
-<hr>
-<h3 id="Chasing_the_Sun_-_Sara_Bareilles">Chasing the Sun - Sara Bareilles</h3>
-<hr>
-<p>It’s a really old city</p>
-<p>这座古老的城市</p>
-<p>Stuck between the dead and the living</p>
-<p>夹在生者与死者之间</p>
-<p>So I thought to myself, sitting on a graveyard shelf</p>
-<p>我坐在一座坟墓上，独自静思</p>
-<p>As the echo of heartbeats, from the ground below my feet</p>
-<p>内心的回响，从我脚下的地面传来</p>
-<p>Filled a cemetery in the center of Queens</p>
-<p>它们填满皇后区的中心</p>
-<p>I started running the maze of</p>
-<p>我开始奔跑于名字与日期的迷宮中</p>
-<p>The names and the dates, some older than others</p>
-<p>有的很古老，有的则是新近的墓碑</p>
-<p>The skyscrapers, little tombstone brothers</p>
-<p>这一座座墓碑以曼哈顿林林总总的摩天楼为背景</p>
-<p>With Manhattan behind her, three million stunning reminders</p>
-<p>300万逝者的墓碑</p>
-<p>Built a cemetery in the center of Queens</p>
-<p>组成了皇后区的墓地</p>
-<p>You said, remember that life is</p>
-<p>Not meant to be wasted</p>
-<p>你说，生命不应被虚耗</p>
-<p>We can always be chasing the sun!</p>
-<p>我们总能追逐阳光</p>
-<p>So fill up your lungs and just run</p>
-<p>But always be chasing the sun!</p>
-<p>深吸一口气就奔跑吧</p>
-<p>永远向着阳光</p>
-<p>So how do you do it,</p>
-<p>该怎么样</p>
-<p>With just words and just music, capture the feeling</p>
-<p>只用言语和音乐捕捉此刻的情感</p>
-<p>That my earth is somebody’s ceiling, can I deliver in sound</p>
-<p>我脚下的地面是另一些曾经活过的人的穹顶</p>
-<p>The weight of the ground</p>
-<p>Of a cemetery in the center of Queens</p>
-<p>我能否用声音表达这墓地的厚重的含义</p>
-<p>There’s a history through her</p>
-<p>它承载着历史</p>
-<p>Sent to us as a gift from the future, to show us the proof</p>
-<p>向我们指示未来</p>
-<p>More than that, it’s to dare us to move</p>
-<p>To open our eyes and to learn from the sky</p>
-<p>它还令我们敢于采取行动</p>
-<p>在这个过程中，开阔我们的视野、获得知识</p>
-<p>From a cemetery in the center of Queens</p>
-<p>从这皇后区的墓地</p>
-<p>You said, remember that life is</p>
-<p>Not meant to be wasted</p>
-<p>你说，生命不应被虚耗</p>
-<p>We can always be chasing the sun!</p>
-<p>So fill up your lungs and just run</p>
-<p>But always be chasing the sun!</p>
-<p>我们总能追逐阳光</p>
-<p>所以深吸一口气就跑吧</p>
-<p>永远向着太阳</p>
-<p>All we can do is try</p>
-<p>And live like we’re still alive</p>
-<p>我们只有尽力去试</p>
-<p>才能不白活一场</p>
-<p>It’s a really old city</p>
-<p>Stuck between the dead and the living</p>
-<p>So I thought to myself, sitting on a graveyard shelf</p>
-<p>这座古老的城市</p>
-<p>夹在生者与死者之间</p>
-<p>我坐在一座坟墓上，独自静思</p>
-<p>And the gift of my heartbeat sounds like a symphony</p>
-<p>Played by a cemetery in the center of Queens</p>
-<p>我心跳的声音像交响乐一般回荡在这皇后区的坟墓</p>
-<p>You said, remember that life is</p>
-<p>Not meant to be wasted</p>
-<p>We can always be chasing the sun!</p>
-<p>So fill up your lungs and just run</p>
-<p>But always be chasing the sun!</p>
-<p>你说，生命不应被虚耗</p>
-<p>我们总能追逐阳光</p>
-<p>所以深吸一口气就跑吧</p>
-<p>永远向着太阳</p>
-<p>All we can do is try</p>
-<p>And live like we’re still alive</p>
-<p>All we can do is try</p>
-<p>And live like we’re still alive</p>
-<p>我们只有尽力去试</p>
-<p>才能不白活一场</p>
-<p>我们只有尽力去试</p>
-<p>才能不白活一场</p>
-<hr>
-<p>您还可以通过关注微信订阅号：<strong>QuickFlip</strong>，获得更多精彩内容。</p>
-
+<p>简单说来，我认为歌词和诗歌的一个最大的共性就是，它们<strong>每个句式表达的意思都是片段而离散的</strong>。句与句之间不必遵循线性的叙述关系。类似于电影的蒙太奇剪辑，诗歌从一个句子描述的意境跳跃到另一个，前一句带来的感染力未及消退，新的意象又扑面而来。好的诗歌或者歌词，充分运用每一个语句来植入一种意象，欣赏的大脑比他们自身的意识更早地接受并加工了这种意象。诗歌语句<strong>对时序逻辑的破坏</strong>，恰恰阻止左脑进行语义的解读，而使右脑接掌分析处理的工作。右脑将会很好地把握语句要传达的情绪与气氛，于是一种一拍即合的欣赏活动就诞生了。最后，欣赏者的意识接收到的是自己大脑进行初步加工后，合成的类似“电影成片”的感受。<br>
     
   </div>
   <footer class="end-sep">
     
+      
+        <div class="alignleft">
+          <a href="/2014/05/22/Chasing the Sun/#more" class="more-link">阅读全文</a>
+        </div>
       
       
     
