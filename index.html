@@ -1,425 +1,2800 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/blogarchives/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/blogarchives/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/blogarchives/images/apple-touch-icon-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/blogarchives/images/favicon-32x32-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/blogarchives/images/favicon-16x16-next.png?v=6.3.0">
+
+
+  <link rel="mask-icon" href="/blogarchives/images/logo.svg?v=6.3.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/blogarchives/',
+    scheme: 'Muse',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
   
-  <title>Lifestream</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  
-    <meta name="author" content="Lazecate">
-  
-  
+
+
+
+
   <meta name="description" content="联结左右脑，关注技术与艺术的结合">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Lifestream">
-<meta property="og:url" content="http://lazecate.github.io/page/2/">
-<meta property="og:image">
-<meta property="og:site_name" content="Lifestream">
+<meta property="og:title" content="Lifestream - 得意忘言">
+<meta property="og:url" content="https://lazecate.github.io/index.html">
+<meta property="og:site_name" content="Lifestream - 得意忘言">
 <meta property="og:description" content="联结左右脑，关注技术与艺术的结合">
+<meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Lifestream">
+<meta name="twitter:title" content="Lifestream - 得意忘言">
 <meta name="twitter:description" content="联结左右脑，关注技术与艺术的结合">
+
+
+
+  <link rel="alternate" href="/blogarchives/atom.xml" title="Lifestream - 得意忘言" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="https://lazecate.github.io/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Lifestream - 得意忘言</title>
   
-  
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
 </head>
 
-<body>
-  <div class="wrapper">
-    <header id="header">
-  <div class="title">
-    <h1><a href="/">Lifestream</a></h1>
-    <p><a href="/">A perspective blog</a></p>
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/blogarchives/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Lifestream - 得意忘言</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">A perspective blog</p>
+      
+    
   </div>
-  <nav class="nav">
-    <ul>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
       
-        <li><a href="/">首页</a></li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/blogarchives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/blogarchives/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+
       
-        <li><a href="/archives">存档</a></li>
       
-        <li><a href="/about">关于</a></li>
-      
-      
-      <li> <a href="/atom.xml">RSS</a> </li>
     </ul>
-    <div class="clearfix"></div>
-  </nav>
-  <div class="clearfix"></div>
-</header>
-    <div class="content">
-
-
-
-
-  
-    <article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <a href="/2014/05/28/艺术欣赏-剪纸的启发/">
-  <time datetime="2014-05-28T00:19:15.000Z">
-    5月 28 2014
-  </time>
-</a>
-    
-    
-  
-    <h1 class="title"><a href="/2014/05/28/艺术欣赏-剪纸的启发/">艺术欣赏-剪纸的启发</a></h1>
   
 
-  </header>
   
-  <div class="entry">
     
-      <p>前一阵,偶然看了非物质文化遗产剪纸艺术的传承人祖孙三代人制作的剪纸艺术的展览，在美术馆展的，叫“高凤莲祖孙三代剪纸艺术展”。回来细想起来，这种将三代人的作品并列展出的做法，<strong>打破了时间逻辑，将几十年的岁月、一家三代女人的大部分人生，放到同一空间中供人欣赏</strong>。如同看小说或者电影一样，观众更容易识别出其中的人物的成长，于是也就更容易获得欣赏的乐趣。具体说来，三个人的作品给我的感觉是这样的：<br>
-    
-  </div>
-  <footer class="end-sep">
-    
-      
-        <div class="alignleft">
-          <a href="/2014/05/28/艺术欣赏-剪纸的启发/#more" class="more-link">阅读全文</a>
-        </div>
-      
-      
-    
-    <div class="clearfix"></div>
-  </footer>
-</article>
-
-
-  
-    <article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <a href="/2014/05/24/an-artificial-poem/">
-  <time datetime="2014-05-24T14:47:18.000Z">
-    5月 24 2014
-  </time>
-</a>
-    
-    
-  
-    <h1 class="title"><a href="/2014/05/24/an-artificial-poem/">An artificial poem</a></h1>
-  
-
-  </header>
-  
-  <div class="entry">
-    
-      <p>今天在看到一款限免的 APP，就下来玩，辅助写作用的，随机生成一些词语，帮助人们产生灵感，可惜不支持中文。不过，写英文也挺有意思的，勉强凑个押韵。</p>
-<pre><code><span class="keyword">In</span> a dark abyss, behind my smile 
-
-i am <span class="keyword">not</span> going <span class="keyword">to</span> ask why 
-
-just can<span class="attribute">'t</span> beg <span class="keyword">for</span> your reply
-
-no longer would i share <span class="keyword">when</span> i feel tired 
-</code></pre>   
-    
-  </div>
-  <footer class="end-sep">
-    
-      
-        <div class="alignleft">
-          <a href="/2014/05/24/an-artificial-poem/#more" class="more-link">阅读全文</a>
-        </div>
-      
-      
-    
-    <div class="clearfix"></div>
-  </footer>
-</article>
-
-
-  
-    <article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <a href="/2014/05/23/writingdownthebones/">
-  <time datetime="2014-05-23T13:31:13.000Z">
-    5月 23 2014
-  </time>
-</a>
-    
-    
-  
-    <h1 class="title"><a href="/2014/05/23/writingdownthebones/">Writing Down the Bones</a></h1>
-  
-
-  </header>
-  
-  <div class="entry">
-    
-      <p><img src="../img/wdtb.jpg" alt="bones"></p>
-<h6 id="一家之评：">一家之评：</h6>
-<p>作者对于写作的技巧和情绪的发挥很有感悟，我是没学会啥写作的技巧，倒对如何欣赏诗和文章有了新的领悟。</p>
-<h6 id="阅读笔记：">阅读笔记：</h6>
-<p>《writing down the bones》里写道，作者写下的文字，只是在当时当刻，文字与心中所想联结起来，于是一挥而就，写完之后就再也回不到那一刻，作者时时刻刻都在变：<br>
-    
-  </div>
-  <footer class="end-sep">
-    
-      
-        <div class="alignleft">
-          <a href="/2014/05/23/writingdownthebones/#more" class="more-link">阅读全文</a>
-        </div>
-      
-      
-    
-    <div class="clearfix"></div>
-  </footer>
-</article>
-
-
-  
-    <article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <a href="/2014/05/23/blogging/">
-  <time datetime="2014-05-23T13:00:15.000Z">
-    5月 23 2014
-  </time>
-</a>
-    
-    
-  
-    <h1 class="title"><a href="/2014/05/23/blogging/">自建博客与媒体猜想</a></h1>
-  
-
-  </header>
-  
-  <div class="entry">
-    
-      <h6 id="关于写博客的Benchmark">关于写博客的Benchmark</h6>
-<p>   最近又处于走火入魔的状态，每次看到有人转发文章，就会启动<strong>Benchmark模式</strong>：</p>
-<blockquote>
-<ul>
-<li>首先看文章的排版，</li>
-<li>排版好看的，就研究它使用的什么平台，微信公众自带？风铃建站？还是其他微站技术。</li>
-<li>然后就链接到对方的站点分析它的微站的拓扑结构、页面跳转流程等等。</li>
-<li>甚至会研究Button配色、文章排版的格式等细节。 </li>
-<li>有了好的启发，就会回去捣鼓自己的小站，进行改良。</li>
-</ul>
-</blockquote>
-
-    
-  </div>
-  <footer class="end-sep">
-    
-      
-        <div class="alignleft">
-          <a href="/2014/05/23/blogging/#more" class="more-link">阅读全文</a>
-        </div>
-      
-      
-    
-    <div class="clearfix"></div>
-  </footer>
-</article>
-
-
-  
-    <article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <a href="/2014/05/22/Chasing the Sun/">
-  <time datetime="2014-05-22T14:56:15.000Z">
-    5月 22 2014
-  </time>
-</a>
-    
-    
-  
-    <h1 class="title"><a href="/2014/05/22/Chasing the Sun/">流行歌曲与诗歌</a></h1>
-  
-
-  </header>
-  
-  <div class="entry">
-    
-      <p><img src="../img/chasingthesun.jpg" alt="chasingsun"></p>
-<p>SaraBareilles的歌一上来就直觉地喜欢上了，直到有一天仔细看了下歌词，突然想明白为什么喜欢上她的歌。</p>
-<p>你会发现，她的歌词都带有一种<strong>诗性美</strong>。这里，歌曲方面，我们暂且不论其音乐在节奏旋律上产生的感染力，尽管它是一个很重要的部分。这里，我只是想就它的歌词与诗歌的某些共性上来探讨一下。</p>
-<p>简单说来，我认为歌词和诗歌的一个最大的共性就是，它们<strong>每个句式表达的意思都是片段而离散的</strong>。句与句之间不必遵循线性的叙述关系。类似于电影的蒙太奇剪辑，诗歌从一个句子描述的意境跳跃到另一个，前一句带来的感染力未及消退，新的意象又扑面而来。好的诗歌或者歌词，充分运用每一个语句来植入一种意象，欣赏的大脑比他们自身的意识更早地接受并加工了这种意象。诗歌语句<strong>对时序逻辑的破坏</strong>，恰恰阻止左脑进行语义的解读，而使右脑接掌分析处理的工作。右脑将会很好地把握语句要传达的情绪与气氛，于是一种一拍即合的欣赏活动就诞生了。最后，欣赏者的意识接收到的是自己大脑进行初步加工后，合成的类似“电影成片”的感受。<br>
-    
-  </div>
-  <footer class="end-sep">
-    
-      
-        <div class="alignleft">
-          <a href="/2014/05/22/Chasing the Sun/#more" class="more-link">阅读全文</a>
-        </div>
-      
-      
-    
-    <div class="clearfix"></div>
-  </footer>
-</article>
-
-
-  
-    <article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <a href="/2014/05/20/个人hexo博客使用手册/">
-  <time datetime="2014-05-20T15:19:15.000Z">
-    5月 20 2014
-  </time>
-</a>
-    
-    
-  
-    <h1 class="title"><a href="/2014/05/20/个人hexo博客使用手册/">个人HEXO博客使用手册</a></h1>
-  
-
-  </header>
-  
-  <div class="entry">
-    
-      <p>Hexo 建站需要手动操作的地方很多，并且有时候需要从头再来，所以很有必要记录下一个程式化的流程。<br>这样可以节省再配置的时间，也可以避免对同一问题反复搜索。<br>以后也会根据“技能 get”情况，陆续更新本帖。<br>
-    
-  </div>
-  <footer class="end-sep">
-    
-      
-        <div class="alignleft">
-          <a href="/2014/05/20/个人hexo博客使用手册/#more" class="more-link">阅读全文</a>
-        </div>
-      
-      
-    
-    <div class="clearfix"></div>
-  </footer>
-</article>
-
-
-  
-    <article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <a href="/2014/05/19/2014-5-20/">
-  <time datetime="2014-05-19T15:19:15.000Z">
-    5月 19 2014
-  </time>
-</a>
-    
-    
-  
-    <h1 class="title"><a href="/2014/05/19/2014-5-20/">个人知识管理</a></h1>
-  
-
-  </header>
-  
-  <div class="entry">
-    
-      <p>身处变动不居、信息爆炸的的当下，个人知识管理对每一个人来说都大有裨益。<br>我们的目标不是获取尽可能多的知识,<strong>而是具备一个弹性的知识架构、系统。</strong>它将充当我们<strong>认知的指南</strong>，在面对新问题、新知识的时候，我们有自己的处理方法。</p>
-
-    
-  </div>
-  <footer class="end-sep">
-    
-      
-        <div class="alignleft">
-          <a href="/2014/05/19/2014-5-20/#more" class="more-link">阅读全文</a>
-        </div>
-      
-      
-    
-    <div class="clearfix"></div>
-  </footer>
-</article>
-
-
-  
-    <article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <a href="/2014/05/19/-左宜右有-quickflip/">
-  <time datetime="2014-05-19T15:19:15.000Z">
-    5月 19 2014
-  </time>
-</a>
-    
-    
-  
-    <h1 class="title"><a href="/2014/05/19/-左宜右有-quickflip/">左宜右有 QuickFlip</a></h1>
-  
-
-  </header>
-  
-  <div class="entry">
-    
-      <h3 id="左宜右有">左宜右有</h3>
-<p>联结左右脑，关注艺术与技术的结合，分享关于认知、思维的精读体验。</p>
-
-    
-  </div>
-  <footer class="end-sep">
-    
-      
-        <div class="alignleft">
-          <a href="/2014/05/19/-左宜右有-quickflip/#more" class="more-link">阅读全文</a>
-        </div>
-      
-      
-    
-    <div class="clearfix"></div>
-  </footer>
-</article>
-
 
   
 
-  <nav id="pagination">
   
-    <a href="/" class="prev">上一页</a>
-  
-  
-  <div class="clearfix"></div>
 </nav>
 
+
+
+  
+
+
+
 </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://lazecate.github.io/blogarchives/2018/06/24/经济学学习笔记-薛兆丰/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lazecate">
+      <meta itemprop="description" content="联结左右脑，关注技术与艺术的结合">
+      <meta itemprop="image" content="/blogarchives/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lifestream - 得意忘言">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/blogarchives/2018/06/24/经济学学习笔记-薛兆丰/" itemprop="url">
+                  经济学学习笔记 -- 薛兆丰
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-06-24 22:24:54 / 修改时间：22:30:32" itemprop="dateCreated datePublished" datetime="2018-06-24T22:24:54+08:00">2018-06-24</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blogarchives/categories/随笔杂谈/" itemprop="url" rel="index"><span itemprop="name">随笔杂谈</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blogarchives/categories/随笔杂谈/文化艺术/" itemprop="url" rel="index"><span itemprop="name">文化艺术</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>这几年陆陆续续自学了好几门经济学在线课，其中尤以北大的周其仁和薛兆丰两位的课程，给我的启发良多，于是在这里陆续整理一下，方便自己以后查阅。</p>
+<hr>
+<p><strong>薛兆丰</strong></p>
+<hr>
+<p><strong>1.产品的价格由什么决定</strong></p>
+<p>产品的价格由最终市场需求决定，商人做的就是将产品或者服务生产出来，然后根据市场供需关系定价，能赚多少是多少；根据赚的钱他需要不定期地调整对自己已有生产资源的评估，确定自己是盈利还是亏损，盈利情况下需要评估主要带来盈利的生产要素，调高这些生产要素的使用成本，而对于带来亏损的生产要素则要调低它的使用成本，通过动态地调整盈亏来调整自己财富资源的估值，也就是说商业社会，从头到尾本质上还是不断地调整对公司的未来的估值，价值取决于别人对它的预期。</p>
+<p><strong>2.产品的价格由什么决定</strong></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
   </div>
-  <footer id="footer"><div class="copyright">
   
-  &copy; 2014 <a href="/">Lazecate</a>
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://lazecate.github.io/blogarchives/2018/06/24/一则都市小寓言/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lazecate">
+      <meta itemprop="description" content="联结左右脑，关注技术与艺术的结合">
+      <meta itemprop="image" content="/blogarchives/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lifestream - 得意忘言">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/blogarchives/2018/06/24/一则都市小寓言/" itemprop="url">
+                  一则都市小寓言
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-06-24 17:54:38 / 修改时间：18:22:35" itemprop="dateCreated datePublished" datetime="2018-06-24T17:54:38+08:00">2018-06-24</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blogarchives/categories/随笔杂谈/" itemprop="url" rel="index"><span itemprop="name">随笔杂谈</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>翻出来一则小品故事，找个地方贴出来吧。</p>
+<p>我说：“你们经受住了生活的考验。”<br>她说：“没什么办法，事情临到头上总要去接。”</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/blogarchives/2018/06/24/一则都市小寓言/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://lazecate.github.io/blogarchives/2018/06/24/Another-act-of-design/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lazecate">
+      <meta itemprop="description" content="联结左右脑，关注技术与艺术的结合">
+      <meta itemprop="image" content="/blogarchives/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lifestream - 得意忘言">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/blogarchives/2018/06/24/Another-act-of-design/" itemprop="url">
+                  Another act of design
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-06-24 14:00:16 / 修改时间：19:11:01" itemprop="dateCreated datePublished" datetime="2018-06-24T14:00:16+08:00">2018-06-24</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blogarchives/categories/随笔杂谈/" itemprop="url" rel="index"><span itemprop="name">随笔杂谈</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blogarchives/categories/随笔杂谈/文化艺术/" itemprop="url" rel="index"><span itemprop="name">文化艺术</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h3 id="Another-act-of-design"><a href="#Another-act-of-design" class="headerlink" title="Another act of design"></a>Another act of design</h3><hr>
+<blockquote>
+<p>用语言表达设计是另一种设计行为。<br>Verbalizing design is another act of design.  - 原研哉《设计中的设计》</p>
+</blockquote>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/blogarchives/2018/06/24/Another-act-of-design/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://lazecate.github.io/blogarchives/2018/06/23/戛然而止/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lazecate">
+      <meta itemprop="description" content="联结左右脑，关注技术与艺术的结合">
+      <meta itemprop="image" content="/blogarchives/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lifestream - 得意忘言">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/blogarchives/2018/06/23/戛然而止/" itemprop="url">
+                  戛然而止
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-06-23 13:31:29 / 修改时间：14:18:13" itemprop="dateCreated datePublished" datetime="2018-06-23T13:31:29+08:00">2018-06-23</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blogarchives/categories/随笔杂谈/" itemprop="url" rel="index"><span itemprop="name">随笔杂谈</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>人们总在听到想要的信息后<br>即刻停止了对一件事物的关注</p>
+<p>这种戛然而止的关注<br>从来不知道王子和公主从此过上的是什么生活</p>
+<p>他们只希望时间定格在“从此他们过上了幸福的生活”</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://lazecate.github.io/blogarchives/2018/06/18/The-Big-Migration-of-Blog/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lazecate">
+      <meta itemprop="description" content="联结左右脑，关注技术与艺术的结合">
+      <meta itemprop="image" content="/blogarchives/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lifestream - 得意忘言">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/blogarchives/2018/06/18/The-Big-Migration-of-Blog/" itemprop="url">
+                  The Big Migration of Blog
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-06-18 09:49:37" itemprop="dateCreated datePublished" datetime="2018-06-18T09:49:37+08:00">2018-06-18</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-06-23 14:14:05" itemprop="dateModified" datetime="2018-06-23T14:14:05+08:00">2018-06-23</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blogarchives/categories/随笔杂谈/" itemprop="url" rel="index"><span itemprop="name">随笔杂谈</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>昨天终于把<code>GitHub</code>的<code>hexo</code>博客服务整好了,而且有了<code>Mobirise</code>的自建站服务，终于可以像模像样给自己搞个主页了。但这么一来可能需要定期做页面内容的运营维护，决定哪些PO出来。</p>
+<pre><code>我的主页：  
+[https://lazecate.github.io/whale/](https://lazecate.github.io/whale/)     
+</code></pre><p>对于折腾自有空间这件事，我似乎永远有热情，而且最近几年好像每到年中总会折腾一次，真是奇怪的现象。</p>
+<pre><code>理想的周末应该有三天           
+一天用来赖床        
+一天用来打扫收拾断舍离
+最后一天用来发现新鲜玩乐
+</code></pre>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/blogarchives/2018/06/18/The-Big-Migration-of-Blog/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://lazecate.github.io/blogarchives/2018/06/17/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lazecate">
+      <meta itemprop="description" content="联结左右脑，关注技术与艺术的结合">
+      <meta itemprop="image" content="/blogarchives/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lifestream - 得意忘言">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/blogarchives/2018/06/17/hello-world/" itemprop="url">
+                  新一轮Hexo折腾
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-06-17 18:25:22" itemprop="dateCreated datePublished" datetime="2018-06-17T18:25:22+08:00">2018-06-17</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-06-23 14:13:51" itemprop="dateModified" datetime="2018-06-23T14:13:51+08:00">2018-06-23</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blogarchives/categories/科技创意/" itemprop="url" rel="index"><span itemprop="name">科技创意</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>###HEXO ROUND 2</p>
+<p>好像始终热衷于折腾自建BLOG，明明并没有写过多少篇，苦于博客平台各领风骚一阵子，似乎就没有停止过迁移，从<code>Windows Space</code>到新浪博客，再到<code>LOFTER</code>，微信公众号等等，每次迁移总要丢失一些东西。所以，自从知道<code>GitHub Pages</code>之后就一直琢磨着把散落在各处的只言片语弄到一起存着，反正按我的水平来说，要写完免费空间还要很久。</p>
+<p><br></p>
+<p>上次折腾HEXO大概2，3年前了，之前还认真的记录了操作步骤手册，这次重新拾掇起来，发现版本先进很多，尤其是结合Git Repository使用，方便直观了很多。模板依然用的是别的提供的，不过自从了解了当前版本的原理后，感觉终于可以做个像样点的个人<code>PORTAL</code>了，非码农容易么我。</p>
+<hr>
+<h2 id="扫码关注我的公众号吧，求打赏"><a href="#扫码关注我的公众号吧，求打赏" class="headerlink" title="     扫码关注我的公众号吧，求打赏 ~~~ "></a>   <font size="2" color="PEACH">  扫码关注我的公众号吧，求打赏 ~~~ </font></h2>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://lazecate.github.io/blogarchives/2018/05/03/全球奇遇故事计划-去东京在根津美术馆Nezu/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lazecate">
+      <meta itemprop="description" content="联结左右脑，关注技术与艺术的结合">
+      <meta itemprop="image" content="/blogarchives/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lifestream - 得意忘言">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/blogarchives/2018/05/03/全球奇遇故事计划-去东京在根津美术馆Nezu/" itemprop="url">
+                  #全球奇遇故事计划#去东京在根津美术馆Nezu ...
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-05-03 08:00:00" itemprop="dateCreated datePublished" datetime="2018-05-03T08:00:00+08:00">2018-05-03</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-06-23 14:12:26" itemprop="dateModified" datetime="2018-06-23T14:12:26+08:00">2018-06-23</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blogarchives/categories/随笔杂感/" itemprop="url" rel="index"><span itemprop="name">随笔杂感</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blogarchives/categories/随笔杂感/旅行见闻/" itemprop="url" rel="index"><span itemprop="name">旅行见闻</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><a href="https://m.weibo.cn/p/searchall?containerid=231522type%3D1%26q%3D%23%E5%85%A8%E7%90%83%E5%A5%87%E9%81%87%E6%95%85%E4%BA%8B%E8%AE%A1%E5%88%92%23%26t%3D10&amp;isnewpage=1&amp;luicode=10000011&amp;lfid=1076031644466022" target="_blank" rel="noopener">#全球奇遇故事计划#</a><br>去东京在根津美术馆Nezu Café听听隈研吾的设计故事；<br>去东京与东野圭吾一起遍寻东京书店，即兴构思一个与书店相关的推理故事<a href="/n/奇遇">@奇遇</a> ​​​</p>
+<p><img src="https://wx3.sinaimg.cn/large/62048f66ly1fqxr6gbdgdj20hs0dcdhl.jpg" alt=""></p>
+<p><img src="https://wx3.sinaimg.cn/large/62048f66ly1fqxr6fsqkoj20hs0m7n4l.jpg" alt=""></p>
+<p><img src="https://wx3.sinaimg.cn/large/62048f66ly1fqxrxzqs7hj20go0ci76t.jpg" alt=""></p>
+<p><img src="https://wx1.sinaimg.cn/large/62048f66ly1fqxry01esij20go0bj75z.jpg" alt=""></p>
+<p><img src="https://wx1.sinaimg.cn/large/62048f66ly1fqxrxzg4ayj20go0b476u.jpg" alt=""></p>
+<p><img src="https://wx2.sinaimg.cn/large/62048f66ly1fqxry0mdflj20go0p043t.jpg" alt=""></p>
+<p><img src="https://wx1.sinaimg.cn/large/62048f66ly1fqxry138gaj20go0ciwga.jpg" alt=""></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://lazecate.github.io/blogarchives/2018/03/06/想不明白为什么有人喜欢待在如此/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lazecate">
+      <meta itemprop="description" content="联结左右脑，关注技术与艺术的结合">
+      <meta itemprop="image" content="/blogarchives/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lifestream - 得意忘言">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/blogarchives/2018/03/06/想不明白为什么有人喜欢待在如此/" itemprop="url">
+                  想不明白为什么有人喜欢待在如此...
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-03-06 00:29:50" itemprop="dateCreated datePublished" datetime="2018-03-06T00:29:50+08:00">2018-03-06</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-06-23 13:47:46" itemprop="dateModified" datetime="2018-06-23T13:47:46+08:00">2018-06-23</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blogarchives/categories/旅行见闻/" itemprop="url" rel="index"><span itemprop="name">旅行见闻</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><a href="http://lazecate.lofter.com/post/3b2d0b_12638c66" target="_blank" rel="noopener"><img src="http://imglf4.nosdn.127.net/img/ak0vS0ZMWU1CaVB4Qm9jaGlDVjFaQ3VFYlJ0MURDZ2lwb2tCS29ESWluUzM2WHVTUGlzMVJ3PT0.jpg?imageView&amp;thumbnail=500x10000&amp;quality=96&amp;stripmeta=0&amp;type=jpg%7Cwatermark&amp;type=1&amp;dx=0&amp;gravity=southwest&amp;dissolve=100&amp;image=aW1nL3N5cy9zZWxlY3Rpb24tcnNzLXdhdGVybWFyay5wbmc=" alt=""></a><br><br><a href="http://lazecate.lofter.com/post/3b2d0b_12638c66" target="_blank" rel="noopener"><img src="http://imglf6.nosdn.127.net/img/ak0vS0ZMWU1CaVB4Qm9jaGlDVjFaTWNlcDEwdGhPdHgvN2ZlbE9PTktEdEFRSnd1N25UY1BBPT0.jpg?imageView&amp;thumbnail=500x10000&amp;quality=96&amp;stripmeta=0&amp;type=jpg%7Cwatermark&amp;type=1&amp;dx=0&amp;gravity=southwest&amp;dissolve=100&amp;image=aW1nL3N5cy9zZWxlY3Rpb24tcnNzLXdhdGVybWFyay5wbmc=" alt=""></a><br><br><a href="http://lazecate.lofter.com/post/3b2d0b_12638c66" target="_blank" rel="noopener"><img src="http://imglf5.nosdn.127.net/img/ak0vS0ZMWU1CaVB4Qm9jaGlDVjFaQzZJd2hLSDB5OEMrOUlQVkZrVWVWSlNJRTZLcjlNRDJ3PT0.jpg?imageView&amp;thumbnail=500x10000&amp;quality=96&amp;stripmeta=0&amp;type=jpg%7Cwatermark&amp;type=1&amp;dx=0&amp;gravity=southwest&amp;dissolve=100&amp;image=aW1nL3N5cy9zZWxlY3Rpb24tcnNzLXdhdGVybWFyay5wbmc=" alt=""></a><br><br><a href="http://lazecate.lofter.com/post/3b2d0b_12638c66" target="_blank" rel="noopener"><img src="http://imglf4.nosdn.127.net/img/ak0vS0ZMWU1CaVB4Qm9jaGlDVjFaTkh2aDNZRzFtRDJjOE0vdnRFTVhlVXlJVkRYNXowc2JRPT0.jpg?imageView&amp;thumbnail=500x10000&amp;quality=96&amp;stripmeta=0&amp;type=jpg%7Cwatermark&amp;type=1&amp;dx=0&amp;gravity=southwest&amp;dissolve=100&amp;image=aW1nL3N5cy9zZWxlY3Rpb24tcnNzLXdhdGVybWFyay5wbmc=" alt=""></a><br><br><a href="http://lazecate.lofter.com/post/3b2d0b_12638c66" target="_blank" rel="noopener"><img src="http://imglf4.nosdn.127.net/img/ak0vS0ZMWU1CaVB4Qm9jaGlDVjFaSTc4aW9jNUJNNGduTlcramxrc2Q3SlVyK2pWTFpVTXVBPT0.jpg?imageView&amp;thumbnail=500x10000&amp;quality=96&amp;stripmeta=0&amp;type=jpg%7Cwatermark&amp;type=1&amp;dx=0&amp;gravity=southwest&amp;dissolve=100&amp;image=aW1nL3N5cy9zZWxlY3Rpb24tcnNzLXdhdGVybWFyay5wbmc=" alt=""></a><br><br><a href="http://lazecate.lofter.com/post/3b2d0b_12638c66" target="_blank" rel="noopener"><img src="http://imglf6.nosdn.127.net/img/ak0vS0ZMWU1CaVB4Qm9jaGlDVjFaQjFrQnYySHViR013djZSUmJrZjN6aDVlbmltait4UkVBPT0.jpg?imageView&amp;thumbnail=500x10000&amp;quality=96&amp;stripmeta=0&amp;type=jpg%7Cwatermark&amp;type=1&amp;dx=0&amp;gravity=southwest&amp;dissolve=100&amp;image=aW1nL3N5cy9zZWxlY3Rpb24tcnNzLXdhdGVybWFyay5wbmc=" alt=""></a><br><br><a href="http://lazecate.lofter.com/post/3b2d0b_12638c66" target="_blank" rel="noopener"><img src="http://imglf6.nosdn.127.net/img/ak0vS0ZMWU1CaVB4Qm9jaGlDVjFaTXJmeDZkbHhxWWlCUHJNNjNURnhZM0ZJTFRIQ1d6cWp3PT0.jpg?imageView&amp;thumbnail=500x10000&amp;quality=96&amp;stripmeta=0&amp;type=jpg%7Cwatermark&amp;type=1&amp;dx=0&amp;gravity=southwest&amp;dissolve=100&amp;image=aW1nL3N5cy9zZWxlY3Rpb24tcnNzLXdhdGVybWFyay5wbmc=" alt=""></a><br><br><a href="http://lazecate.lofter.com/post/3b2d0b_12638c66" target="_blank" rel="noopener"><img src="http://imglf6.nosdn.127.net/img/ak0vS0ZMWU1CaVB4Qm9jaGlDVjFaQWZrK0trQ2hkekVhNGVsaDNNM01MWVdESXo3YUNWcnB3PT0.jpg?imageView&amp;thumbnail=500x10000&amp;quality=96&amp;stripmeta=0&amp;type=jpg%7Cwatermark&amp;type=1&amp;dx=0&amp;gravity=southwest&amp;dissolve=100&amp;image=aW1nL3N5cy9zZWxlY3Rpb24tcnNzLXdhdGVybWFyay5wbmc=" alt=""></a><br><br><a href="http://lazecate.lofter.com/post/3b2d0b_12638c66" target="_blank" rel="noopener"><img src="http://imglf4.nosdn.127.net/img/ak0vS0ZMWU1CaVB4Qm9jaGlDVjFaQXdXL1hzMEwvMnU4VzE0VkFtTW1tUlpGK1Rhc2wxZ0ZBPT0.jpg?imageView&amp;thumbnail=500x10000&amp;quality=96&amp;stripmeta=0&amp;type=jpg%7Cwatermark&amp;type=1&amp;dx=0&amp;gravity=southwest&amp;dissolve=100&amp;image=aW1nL3N5cy9zZWxlY3Rpb24tcnNzLXdhdGVybWFyay5wbmc=" alt=""></a><br></p>
+
+<p>想不明白为什么有人喜欢待在如此blingbling的地方，每天戴墨镜么？还是眼睛早已晃瞎了？<br></p>
+
+<p><a href="http://lazecate.lofter.com" target="_blank" rel="noopener">LOFTER：浮生絮语&middot;得意忘言</a>&nbsp;&nbsp;&nbsp;<a href="http://lazecate.lofter.com/post/3b2d0b_12638c66" target="_blank" rel="noopener">http://lazecate.lofter.com/post/3b2d0b_12638c66</a></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://lazecate.github.io/blogarchives/2018/01/28/旧金山笛洋美术馆/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lazecate">
+      <meta itemprop="description" content="联结左右脑，关注技术与艺术的结合">
+      <meta itemprop="image" content="/blogarchives/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lifestream - 得意忘言">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/blogarchives/2018/01/28/旧金山笛洋美术馆/" itemprop="url">
+                  旧金山笛洋美术馆
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-01-28 19:27:03" itemprop="dateCreated datePublished" datetime="2018-01-28T19:27:03+08:00">2018-01-28</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-06-23 14:00:36" itemprop="dateModified" datetime="2018-06-23T14:00:36+08:00">2018-06-23</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blogarchives/categories/文化艺术/" itemprop="url" rel="index"><span itemprop="name">文化艺术</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blogarchives/categories/文化艺术/旅行见闻/" itemprop="url" rel="index"><span itemprop="name">旅行见闻</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><a href="http://lazecate.lofter.com/post/3b2d0b_1221c2de" target="_blank" rel="noopener"><img src="http://imglf3.nosdn.127.net/img/ak0vS0ZMWU1CaU1pckErcjFXZDJHa003MUFiOFFTRXROVHpjd1VPcFhYMmcvTW01TzFEVjRBPT0.jpg?imageView&amp;thumbnail=500x10000&amp;quality=96&amp;stripmeta=0&amp;type=jpg%7Cwatermark&amp;type=1&amp;dx=0&amp;gravity=southwest&amp;dissolve=100&amp;image=aW1nL3N5cy9zZWxlY3Rpb24tcnNzLXdhdGVybWFyay5wbmc=" alt=""></a><br><br><a href="http://lazecate.lofter.com/post/3b2d0b_1221c2de" target="_blank" rel="noopener"><img src="http://imglf5.nosdn.127.net/img/ak0vS0ZMWU1CaU1pckErcjFXZDJHb2ltLy9VR1lWcFhncHFLMVluUE9Cc3k5VGgxNS9VeUV3PT0.jpg?imageView&amp;thumbnail=500x10000&amp;quality=96&amp;stripmeta=0&amp;type=jpg%7Cwatermark&amp;type=1&amp;dx=0&amp;gravity=southwest&amp;dissolve=100&amp;image=aW1nL3N5cy9zZWxlY3Rpb24tcnNzLXdhdGVybWFyay5wbmc=" alt=""></a><br><br><a href="http://lazecate.lofter.com/post/3b2d0b_1221c2de" target="_blank" rel="noopener"><img src="http://imglf4.nosdn.127.net/img/ak0vS0ZMWU1CaU1pckErcjFXZDJHalB2cDUrNVNocDBwRWQzUStKR2pSRGl2SmtpVDRiOVdRPT0.jpg?imageView&amp;thumbnail=500x10000&amp;quality=96&amp;stripmeta=0&amp;type=jpg%7Cwatermark&amp;type=1&amp;dx=0&amp;gravity=southwest&amp;dissolve=100&amp;image=aW1nL3N5cy9zZWxlY3Rpb24tcnNzLXdhdGVybWFyay5wbmc=" alt=""></a><br><br><a href="http://lazecate.lofter.com/post/3b2d0b_1221c2de" target="_blank" rel="noopener"><img src="http://imglf3.nosdn.127.net/img/ak0vS0ZMWU1CaU1pckErcjFXZDJHbmdhQ1hmRFhkaGIvQndIYkVJbmx5NUM3N00rbXpacHF3PT0.jpg?imageView&amp;thumbnail=500x10000&amp;quality=96&amp;stripmeta=0&amp;type=jpg%7Cwatermark&amp;type=1&amp;dx=0&amp;gravity=southwest&amp;dissolve=100&amp;image=aW1nL3N5cy9zZWxlY3Rpb24tcnNzLXdhdGVybWFyay5wbmc=" alt=""></a><br><br><a href="http://lazecate.lofter.com/post/3b2d0b_1221c2de" target="_blank" rel="noopener"><img src="http://imglf6.nosdn.127.net/img/ak0vS0ZMWU1CaU1pckErcjFXZDJHdVE2MkZ1RnRWSnpzZERpK0hiZzRDcWxxU0VZa2F1U1BnPT0.jpg?imageView&amp;thumbnail=500x10000&amp;quality=96&amp;stripmeta=0&amp;type=jpg%7Cwatermark&amp;type=1&amp;dx=0&amp;gravity=southwest&amp;dissolve=100&amp;image=aW1nL3N5cy9zZWxlY3Rpb24tcnNzLXdhdGVybWFyay5wbmc=" alt=""></a><br><br><a href="http://lazecate.lofter.com/post/3b2d0b_1221c2de" target="_blank" rel="noopener"><img src="http://imglf4.nosdn.127.net/img/ak0vS0ZMWU1CaU1pckErcjFXZDJHZzJXRUg5clIweGJHcXM4WURmbEZHdkplWGUxZXFxZ1FBPT0.jpg?imageView&amp;thumbnail=500x10000&amp;quality=96&amp;stripmeta=0&amp;type=jpg%7Cwatermark&amp;type=1&amp;dx=0&amp;gravity=southwest&amp;dissolve=100&amp;image=aW1nL3N5cy9zZWxlY3Rpb24tcnNzLXdhdGVybWFyay5wbmc=" alt=""></a><br><br><a href="http://lazecate.lofter.com/post/3b2d0b_1221c2de" target="_blank" rel="noopener"><img src="http://imglf4.nosdn.127.net/img/ak0vS0ZMWU1CaVB6RTl6N2Z2SUc4NGxaVGt5cHpKSzZiNFRwWjNSTmN3TXFPcWx2UW1hZURRPT0.jpg?imageView&amp;thumbnail=500x10000&amp;quality=96&amp;stripmeta=0&amp;type=jpg%7Cwatermark&amp;type=1&amp;dx=0&amp;gravity=southwest&amp;dissolve=100&amp;image=aW1nL3N5cy9zZWxlY3Rpb24tcnNzLXdhdGVybWFyay5wbmc=" alt=""></a><br><br><a href="http://lazecate.lofter.com/post/3b2d0b_1221c2de" target="_blank" rel="noopener"><img src="http://imglf5.nosdn.127.net/img/ak0vS0ZMWU1CaVB6RTl6N2Z2SUc4MHRQVnE4bmZDR1pIajNtaVUxUzJaNTlOcUIxTzRzd0l3PT0.jpg?imageView&amp;thumbnail=500x10000&amp;quality=96&amp;stripmeta=0&amp;type=jpg%7Cwatermark&amp;type=1&amp;dx=0&amp;gravity=southwest&amp;dissolve=100&amp;image=aW1nL3N5cy9zZWxlY3Rpb24tcnNzLXdhdGVybWFyay5wbmc=" alt=""></a><br><br><a href="http://lazecate.lofter.com/post/3b2d0b_1221c2de" target="_blank" rel="noopener"><img src="http://imglf6.nosdn.127.net/img/ak0vS0ZMWU1CaVB6RTl6N2Z2SUc4ekM0UWpIb2hJWU5PakhwTkNmdFZRTWh2Sk5ERFJjVlJ3PT0.jpg?imageView&amp;thumbnail=500x10000&amp;quality=96&amp;stripmeta=0&amp;type=jpg%7Cwatermark&amp;type=1&amp;dx=0&amp;gravity=southwest&amp;dissolve=100&amp;image=aW1nL3N5cy9zZWxlY3Rpb24tcnNzLXdhdGVybWFyay5wbmc=" alt=""></a><br><br><a href="http://lazecate.lofter.com/post/3b2d0b_1221c2de" target="_blank" rel="noopener"><img src="http://imglf3.nosdn.127.net/img/ak0vS0ZMWU1CaVBEWFg0S3hZaFpsQW9FendyK2JjMHMvYzMzMVYwblRlYk95YUxsaVVXUUVnPT0.jpg?imageView&amp;thumbnail=500x10000&amp;quality=96&amp;stripmeta=0&amp;type=jpg%7Cwatermark&amp;type=1&amp;dx=0&amp;gravity=southwest&amp;dissolve=100&amp;image=aW1nL3N5cy9zZWxlY3Rpb24tcnNzLXdhdGVybWFyay5wbmc=" alt=""></a><br></p>
+
+<p>旧金山笛洋美术馆<br></p>
+
+<p><a href="http://lazecate.lofter.com" target="_blank" rel="noopener">LOFTER：浮生絮语&middot;得意忘言</a>&nbsp;&nbsp;&nbsp;<a href="http://lazecate.lofter.com/post/3b2d0b_1221c2de" target="_blank" rel="noopener">http://lazecate.lofter.com/post/3b2d0b_1221c2de</a></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://lazecate.github.io/blogarchives/2017/12/17/Design-talks-with-Business-2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lazecate">
+      <meta itemprop="description" content="联结左右脑，关注技术与艺术的结合">
+      <meta itemprop="image" content="/blogarchives/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lifestream - 得意忘言">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/blogarchives/2017/12/17/Design-talks-with-Business-2/" itemprop="url">
+                  Design talks with Business 2
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-12-17 23:21:44" itemprop="dateCreated datePublished" datetime="2017-12-17T23:21:44+08:00">2017-12-17</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-06-23 13:12:50" itemprop="dateModified" datetime="2018-06-23T13:12:50+08:00">2018-06-23</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blogarchives/categories/随笔杂谈/" itemprop="url" rel="index"><span itemprop="name">随笔杂谈</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>#####商业智能</p>
+<p>正式商用用户逐渐多起来, 虽然累,心烦,但快速地迭代响应过程中激发的感悟也很多,这让我再次确认了自己喜欢经历这样的事情. 从去年对新行业什么都不懂,到一点点地设计结构功能,梳理逻辑,最有成就感的莫过于亲手设计的功能,跟客户实际的生意发生关系,每一笔金钱的流转都跟你曾经的预想蓝图相关,我们的产品虽然还不完善,但它承受住了现实考验,让客户的生意在上面跑了起来.每每想起这一点,我都觉得感慨万千, 果然还是喜欢这种–自己的付出和努力,能在看得见的地方,直接地看到效果,评估产出.这是一种真实的游戏.</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/blogarchives/2017/12/17/Design-talks-with-Business-2/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/blogarchives/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/blogarchives/page/23/">23</a><a class="extend next" rel="next" href="/blogarchives/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Lazecate</p>
+              <p class="site-description motion-element" itemprop="description">联结左右脑，关注技术与艺术的结合</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/blogarchives/archives/">
+                
+                    <span class="site-state-item-count">227</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">17</span>
+                    <span class="site-state-item-name">分类</span>
+                  
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">221</span>
+                    <span class="site-state-item-name">标签</span>
+                  
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/blogarchives/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Lazecate</span>
+
+  
+
   
 </div>
-<div class="theme-copyright">
-  Theme by <a href="https://github.com/orderedlist" target="_blank">orderedlist</a>
-   | 
-  Redesign by <a href="http://heroicyang.com/" target="_blank">Heroic Yang</a>
-</div>
-<div class="clearfix"></div></footer>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-<script src="/js/scale.fix.js"></script>
-<script src="/js/jquery.imagesloaded.min.js"></script>
-<script src="/js/gallery.js"></script>
 
 
 
 
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.7.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Muse</a> v6.3.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
 <script type="text/javascript">
-  (function($){
-    $('.fancybox').fancybox();
-  })(jQuery);
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/blogarchives/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blogarchives/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blogarchives/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/blogarchives/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/blogarchives/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/blogarchives/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
 </body>
 </html>
