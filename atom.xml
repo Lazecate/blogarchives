@@ -3,7 +3,7 @@
   <title>Lifestream - 得意忘言</title>
   <icon>https://www.gravatar.com/avatar/d68fcc15388e786287ff3e0eed71e8f4</icon>
   <subtitle>A perspective blog</subtitle>
-  <link href="blogarchives/atom.xml" rel="self"/>
+  <link href="/blogarchives/atom.xml" rel="self"/>
   
   <link href="https://lazecate.github.io/blogarchives/"/>
   <updated>2018-06-30T10:37:31.000Z</updated>
